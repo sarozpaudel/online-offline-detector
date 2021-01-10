@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Online Offline Detecter</title>
+</head>
+<body>
+
+<p id="status" ></p>
+
+<script type="text/javascript">
+
+var a = navigator.onLine;
+var b = document.getElementById("status");
+b.innerHTML = a;
+
+if(b.innerHTML == "true"){
+b.innerHTML = "You are online.";
+}
+
+else{
+b.innerHTML = "You are offline.";
+}
+
+</script>
+</body>
+</html>
